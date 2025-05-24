@@ -1,3 +1,9 @@
+
+export const dynamic = process.env.MODE_PROD === "true" ? "force-dynamic" : ""; // Force dynamic rendering if mode prod is true
+
+
+// Re-generate the page on every request
+
 import prisma from "@/app/lib/prisma";
 import TodosGrid from "@/todos/components/TodosGrid";
 

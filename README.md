@@ -18,9 +18,11 @@ docker compose up -d (detach mode)
 2. npx prisma init #si no lo tienes instalado o te salteaste el paso 1, te preguntará para instalarlo
 ```
 
-* Renombrar .env -> .env.template
+* Renombrar _env.template -> .env
 
-* .env -> Cambiar los datos en la cadena de conexion a la base de datos (por default, es con PostgreSQL)
+* .env: <br>
+    1. Cambiar los datos en la cadena de conexion a la base de datos (por default, es con PostgreSQL)
+    2. Cambiar a "true" la varible "MOD_PROD" para que al hacer el build, sea dinamico toda acción contra la BD
 
 * Por cada cambio que hagamos en los modelos en "./prisma/schema.prisma", vamos a ejecutar el comando:
 ```bash
