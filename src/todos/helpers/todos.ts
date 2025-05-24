@@ -10,7 +10,6 @@ export const updateStatusTodo = async (id:string, complete: boolean):Promise<Tod
         body: JSON.stringify({ complete }),
     })
     .then((res) => res.json())
-    .catch(error => error.json())
 
     return todo
 
@@ -26,7 +25,6 @@ export const createTodo = async(description: string):Promise<Todo> => {
         body: JSON.stringify({ description }),
     })
     .then((res) => res.json())
-    .catch(error => error.json())
 
     return newTodo
 }
@@ -37,7 +35,6 @@ export const deleteTodo = async ():Promise<Todo> => {
         method: "DELETE"
     })
     .then((res) => res.json())
-    .catch(error => error.json())
 
     return deleteTodoComplete
 }

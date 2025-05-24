@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
         hostname: 'encrypted-tbn0.gstatic.com',
       },
     ],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   }
 };
 

@@ -23,7 +23,7 @@ export const NewTodo = () => {
     }
 
     const deleteCompleted = async () => {
-        deleteTodo()
+        await deleteTodo()
         router.refresh()
     }
 

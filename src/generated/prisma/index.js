@@ -126,7 +126,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/maurodev/Desktop/NEXTJS/admin-todos/src/generated/prisma",
+      "value": "/Users/maurodev/Desktop/NEXTJS/TodoListNextJS/src/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -140,12 +140,11 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/maurodev/Desktop/NEXTJS/admin-todos/prisma/schema.prisma",
+    "sourceFilePath": "/Users/maurodev/Desktop/NEXTJS/TodoListNextJS/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
-    "schemaEnvPath": "../../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../../prisma",
   "clientVersion": "6.8.2",
@@ -154,7 +153,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": false,
+  "postinstall": true,
   "inlineDatasources": {
     "db": {
       "url": {
