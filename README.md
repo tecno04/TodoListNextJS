@@ -1,6 +1,11 @@
 ## Getting Started
 # Development:
 
+* Instalaciones Previas: <br>
+1 - Tener docker instalado para poder dockerizar la BD con el archivo "docker-compose.yml"
+<br>
+2 - ejecutar comando ```bash npm install | npm i``` (cualquiera de los dos funciona)
+
 * Docker:
 ```bash
 docker compose up -d (detach mode)
@@ -30,4 +35,14 @@ npx prisma generate
 * Para tener datos y poder jugar con el CRUD, ejecutar desde POSTMAN/INSOMIA/WEB:
 ```bash
 http://localhost:3000/api/seed
+```
+
+* Para ejecutar en modo dev:
+```bash
+npm run dev
+```
+
+* Para construir proyecto:
+```bash
+npm run build
 ```
