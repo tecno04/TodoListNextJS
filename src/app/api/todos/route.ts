@@ -34,3 +34,22 @@ export async function POST(request: Request) {
     }
 
 }
+
+export async function DELETE(request: Request) {
+
+    try {
+    
+        const deleteTodoComplete = await prisma.todo.deleteMany({
+            where: {
+                complete: true
+            }
+        })
+    
+        return NextResponse.json(deleteTodoComplete)
+        
+    } catch (error) {
+        console.log(error)
+        return NextResponse.json( error , { status: 400 } )
+    }
+
+}
