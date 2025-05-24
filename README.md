@@ -26,3 +26,8 @@ npx prisma generate "nombre_migracion" (ejemplo "npx prisma generate dev")
 ```bash
 npx prisma generate
 ```
+
+* Para tener datos y poder jugar con el CRUD, ejecutar desde POSTMAN/INSOMIA/WEB:
+```bash
+http://localhost:3000/api/seed
+```
