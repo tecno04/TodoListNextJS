@@ -3,14 +3,6 @@ import { Todo } from '@/generated/prisma'
 import { NextResponse, NextRequest } from 'next/server'
 import * as yup from 'yup'
 
-// interface Segments {
-
-//     params: {
-//         id: string
-//     }
-
-// }
-
 const PutSchema = yup.object({
     description: yup.string().optional(),
     complete: yup.boolean().optional()
