@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { CiBookmark, CiBookmarkCheck, CiLogout } from "react-icons/ci";
 import SideBarItem from "./SideBarItem";
-import { IoCalendar } from "react-icons/io5";
-import path from "path";
+import { IoCalendar, IoCart, IoCompass } from "react-icons/io5";
 
 const menuItems = [
     { icon: <CiBookmarkCheck />, path: "/dashboard/rest-todos", title: "Dashboard Todos" },
     { icon: <CiBookmark />, path: "/dashboard", title: "Dashboard" },
     { icon: <IoCalendar />, path: "/dashboard/server-actions", title: "Server Actions" },
+    { icon: <IoCompass />, path: "/dashboard/cookies", title: "Cookies" },
+    { icon: <IoCart />, path: "/dashboard/products", title: "Productos" },
 ]
 
 export default function SideBar() {

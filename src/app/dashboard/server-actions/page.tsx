@@ -6,6 +6,12 @@ export const dynamic = "force-dynamic"; // Force dynamic rendering
 import prisma from "@/app/lib/prisma";
 import TodosGrid from "@/todos/components/TodosGrid";
 
+
+export const metadata = {
+ title: 'Server Actions',
+ description: 'Server Actions',
+};
+
 export default async function ServerTodosPage() {
 
   const todos = await prisma.todo.findMany({ orderBy: { description: 'asc' } })
